@@ -1,0 +1,16 @@
+{
+  "name": "arviewer",
+  "version": "1.0.0",
+  "description": "ARViewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node testARViewer.js"
+  },
+  "author": "Angelo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "formidable": "1.2.0",
+    "log4js": "2.5.3"
+  }
+}
