@@ -2,9 +2,9 @@
   "name": "arviewer",
   "version": "1.0.0",
   "description": "ARViewer",
-  "main": "index.js",
   "scripts": {
-    "test": "node testARViewer.js"
+    "test": "node testARViewer.js",
+    "start": "node app.js"
   },
   "author": "Angelo",
   "license": "ISC",

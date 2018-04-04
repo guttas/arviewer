@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  arviewer:
+    build: .
+    command: nodemon -L --inspect=0.0.0.0:5858
+    volumes:
+      - .:/code
+    ports:
+      - "3000:3000"
+      - "5858:5858"

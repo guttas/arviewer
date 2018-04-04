@@ -65,17 +65,17 @@ router.post('/upload', function(req, res) {
     });
 
     Promise.all([upload(uploadFile.path), translate(uploadFile.path)]).then(v =>{
-      res.send(v[0]);
+      res.json({success:true, message:v[0]});
       return;
     }).catch(function(err){
       console.log(err);
-      res.send('error');
+      res.json({success: false, message:'err'});
       return;
     });
 
   }).catch(function(err){
     console.log(err);
-    res.send('error');
+    res.json({success: false, message:'upload error!'});
     return;
   }); 
 });
